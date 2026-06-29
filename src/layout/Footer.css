@@ -1,0 +1,42 @@
+/* ── FOOTER ── */
+.site-footer {
+  background:rgba(5,5,16,0.98); border-top:1px solid var(--border);
+  padding:56px 5% 32px; margin-top:80px;
+}
+.footer-inner { max-width:1100px; margin:0 auto; text-align:center; }
+.footer-brand {
+  display:inline-flex; align-items:center; gap:10px;
+  font-size:1.7rem; font-weight:800; margin-bottom:24px;
+}
+.footer-brand .logo-icon-wrap { width:34px; height:34px; border-radius:9px; }
+.footer-nav {
+  display:flex; flex-wrap:wrap; justify-content:center;
+  gap:6px 18px; margin-bottom:24px;
+}
+.footer-nav a {
+  color:var(--gray); text-decoration:none; font-size:0.88rem;
+  display:flex; align-items:center; gap:6px;
+  transition:color 0.3s;
+}
+.footer-nav a:hover { color:var(--cyan); }
+.footer-contact {
+  display:flex; flex-wrap:wrap; justify-content:center;
+  gap:10px; margin-bottom:28px;
+}
+.footer-contact a {
+  color:var(--gray); text-decoration:none; font-size:0.82rem;
+  padding:8px 16px; border:1px solid var(--border); border-radius:50px;
+  display:flex; align-items:center; gap:7px;
+  transition:all 0.3s;
+}
+.footer-contact a:hover { color:var(--cyan); border-color:var(--cyan); background:rgba(0,245,255,0.05); }
+.footer-copy { font-size:0.76rem; color:var(--gray); }
+.footer-copy span { color:var(--cyan); }
+
+@media(max-width:500px) {
+  .site-footer { padding:44px 6% 26px; margin-top:56px; }
+  .footer-brand { font-size:1.4rem; margin-bottom:18px; }
+  .footer-nav { gap:5px 12px; margin-bottom:18px; }
+  .footer-nav a { font-size:0.82rem; }
+  .footer-contact a { padding:7px 13px; font-size:0.78rem; }
+}
