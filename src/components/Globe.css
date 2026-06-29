@@ -1,0 +1,46 @@
+.globe-wrap {
+  position:relative; flex-shrink:0;
+  max-width:100%;
+}
+.globe-wrap canvas {
+  width:100% !important; height:100% !important;
+  border-radius:50%;
+  opacity:0; transition:opacity 1.6s ease;
+}
+.globe-wrap canvas.ready { opacity:1; }
+
+.globe-wrap::before {
+  content:''; position:absolute; inset:-20px;
+  border-radius:50%;
+  background:radial-gradient(circle, rgba(0,245,255,0.12) 0%, rgba(168,85,247,0.06) 50%, transparent 70%);
+  animation:float 4s ease-in-out infinite;
+  pointer-events:none;
+}
+.globe-wrap::after {
+  content:''; position:absolute; inset:-8px; border-radius:50%;
+  border:1px solid rgba(0,245,255,0.18);
+  border-top-color:rgba(0,245,255,0.6);
+  animation:spin-slow 8s linear infinite;
+  pointer-events:none;
+}
+
+/* Purple-led variant used on the portofolio page */
+.globe-wrap.theme-purple::before {
+  background:radial-gradient(circle, rgba(168,85,247,0.14) 0%, rgba(0,245,255,0.06) 50%, transparent 70%);
+}
+.globe-wrap.theme-purple::after {
+  border-color:rgba(168,85,247,0.2);
+  border-top-color:rgba(168,85,247,0.7);
+}
+
+@media(max-width:900px) {
+  .globe-wrap { width:300px !important; height:300px !important; }
+}
+@media(max-width:500px) {
+  .globe-wrap { width:220px !important; height:220px !important; }
+  .globe-wrap::before { inset:-12px; }
+  .globe-wrap::after { inset:-6px; }
+}
+@media(max-width:360px) {
+  .globe-wrap { width:180px !important; height:180px !important; }
+}
