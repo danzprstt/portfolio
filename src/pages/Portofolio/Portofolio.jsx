@@ -232,9 +232,9 @@ export default function Portofolio() {
             <div className="hub-ico"><School size={22} /></div>
             <h3>Web School</h3><p>Website resmi SMK KBM 1</p>
           </a>
-          <a href='https://x-tkj-4.vercel.app' target='_blank' rel='noreferrer' className='uiv-card hub-card'>       
+          <a href='https://xi-tkj-5.vercel.app' target='_blank' rel='noreferrer' className='uiv-card hub-card'>       
             <div className="hub-ico"><Users size={22} /></div>
-            <h3>Web X TKJ 4</h3><p>The Memory Of X TKJ 4</p>
+            <h3>Web Xi TKJ 5</h3><p>The Memory Of X TKJ 5</p>
           </a>
           <div className="uiv-card hub-card" onClick={() => dtToast('Contact page segera hadir', 'info')}>
             <div className="hub-ico"><Contact size={22} /></div>
