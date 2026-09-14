@@ -1,0 +1,17 @@
+.scroll-top {
+  position:fixed; bottom:28px; right:28px; width:44px; height:44px;
+  border-radius:16px; background:var(--bg3); border:1px solid var(--border);
+  color:var(--cyan); cursor:pointer; display:flex; align-items:center;
+  justify-content:center; opacity:0; transform:translateY(20px);
+  transition:opacity .3s var(--ease), transform .3s var(--ease), background .2s;
+  z-index:900;
+}
+.scroll-top.show { opacity:1; transform:translateY(0); }
+.scroll-top:hover { background:rgba(0,229,255,.14); border-color:var(--cyan); }
+
+@media(max-width:600px) {
+  /* Kept below the Store page's cart-fab (see Store.css) — same right
+     edge, stacked with a fixed gap, so the two floating buttons never
+     sit on top of each other regardless of viewport width. */
+  .scroll-top { bottom:20px; right:20px; width:40px; height:40px; }
+}
