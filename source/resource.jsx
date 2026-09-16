@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { AlertTriangle, House } from 'lucide-react';
 import SEO from '../../components/SEO';
-import './NotFound.css';
+import './resource.css';
 
 export default function NotFound() {
   return (
