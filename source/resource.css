@@ -1,0 +1,19 @@
+.notfound-page {
+  background:var(--bg); color:var(--white); min-height:100vh;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  padding:40px 20px; text-align:center;
+}
+.notfound-icon {
+  width:56px; height:56px; border-radius:16px; margin-bottom:20px;
+  display:flex; align-items:center; justify-content:center;
+  background:rgba(255,69,58,0.1); border:1px solid rgba(255,69,58,0.28); color:var(--pink);
+}
+.notfound-code {
+  font-size:clamp(70px,18vw,120px); font-weight:900; line-height:1; margin-bottom:16px;
+  font-family:var(--mono);
+  background:linear-gradient(135deg,var(--cyan),var(--purple));
+  -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+}
+.notfound-msg { font-family:var(--mono); color:var(--gray); max-width:480px; margin:0 auto 26px; line-height:1.7; font-size:.92rem; }
+.notfound-btn-wrap { display:flex; justify-content:center; }
+.notfound-btn { font-family:var(--mono); }
