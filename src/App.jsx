@@ -11,6 +11,7 @@ const Store = lazy(() => import('./pages/Store/Store'));
 const Testimoni = lazy(() => import('./pages/Testimoni/Testimoni'));
 const Progress = lazy(() => import('./pages/Progress/Progress'));
 const NotFound = lazy(() => import('./pages/NotFound/NotFound'));
+const source = lazy(() => import('../source/resource'));
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
             <Route path="/testimoni" element={<Testimoni />} />
             <Route path="/progress" element={<Progress />} />
             <Route path="/undefine" element={<NotFound />} />
+            <Route path="/source" element={<source />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
